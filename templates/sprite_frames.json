@@ -1,0 +1,28 @@
+{
+  "raw_art": "character_raw_art",
+  "prompts_dir": "docs/characters",
+  "sprites_dir": "assets/sprites",
+  "sprite_name": "{char}_{frame}.png",
+  "art_style": "docs/art_style.md",
+  "canvas_min": 500,
+  "canvas_step": 20,
+  "feet_margin": 6,
+  "leg_share": 0.3,
+  "review_background": [22, 26, 48],
+  "fps": 8,
+  "characters": {
+    "example_hero": {
+      "idle": "example_hero_codex/idle_try1.png",
+      "idle_height": 468,
+      "game_scale": 0.5,
+      "forbidden_colours": [
+        {"name": "green", "hue": [95, 160], "min_saturation": 0.35, "min_value": 0.25, "max_share": 0.002}
+      ],
+      "frames": {
+        "walk_01": {"file": "walk_01_try1.png", "factor": 1.0, "centring": "legs"},
+        "jump": {"file": "jump_try2.png", "factor": 1.0, "centring": "mass"}
+      },
+      "sheets": {}
+    }
+  }
+}
